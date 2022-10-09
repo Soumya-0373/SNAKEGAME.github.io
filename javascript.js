@@ -9,7 +9,7 @@ class SnakePart{
     }
 }
 
-let speed = 4;
+let speed = 6;
 
 let tilecount = 20;
 let headx = 10;
@@ -117,8 +117,16 @@ function food_collission(){
         foodx = Math.floor(Math.random()*tilecount);
         foody = Math.floor(Math.random()*tilecount);
         taillength++;
-        speed++;
         score++;
+    }
+    if(score>5){
+        speed = 8;
+    }
+    if(score>10){
+        speed = 10;
+    }
+    if(score>20){
+        speed = 15;
     }
 }
 

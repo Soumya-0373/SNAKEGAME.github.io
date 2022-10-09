@@ -7,6 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(46, 46, 46);
+    overflow: hidden;
 }
 
 canvas {
@@ -31,6 +32,7 @@ canvas {
     transform: translate(-50%, -50%);
     padding: 30px 30px;
     border-radius: 3px;
+    transition: 1s;
     display: none;
 }
 
@@ -56,24 +58,34 @@ button:hover {
 #score{
     font-size: 20px
 }
-.play{
-    margin-top: 68vh;
+.play1{
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3,10vw);
+    grid-template-columns: repeat(1,10vw);
     grid-template-rows: repeat(2,10vw);
-    column-gap: 7px;
     row-gap: 7px;
     visibility: hidden;
 }
-
+.play2{
+        margin-top: 80vh;
+        display: grid;
+        grid-template-columns: repeat(2,10vw);
+        grid-template-rows: repeat(1,10vw);
+        column-gap: 7px;
+        row-gap: 7px;
+        visibility: hidden;
+}
 
 
 @media(max-width:375px){
     .result{
         padding: 50px 50px;
     }
-    .play{
+    .play1{
         visibility:visible;
+    }
+    .play2{
+        visibility: visible;
     }
 }
 
@@ -81,30 +93,74 @@ button:hover {
     .result{
         width: 30vh;
     }
-    .play{
+    .play1{
+        visibility: visible;
+    }
+    .play2{
         visibility: visible;
     }
 }
 @media(max-width:414px){
     .result{
         width: 30vh;
+        transform: translateX(-50%) translateY(-50%) rotate(90deg);
+        margin-left: 10px;
+        /* position: relative; */
+        top: 50%;
+        text-align: center;
+        width: 90vw;
     }
-    .play{
+    .play1{
         visibility: visible;
+    }
+    .play2{
+        visibility: visible;
+    }
+    #reset{
+        margin-left: 11px;
     }
 }
 
 @media(max-width:820px){
     .result{
-        width: 20vh;
+        width: 30vh;
+        transform: translateX(-50%) translateY(-50%) rotate(90deg);
+        margin-left: 10px;
+        /* position: relative; */
+        top: 50%;
+        text-align: center;
+        width: 90vw;
     }
-    .play{
+    .play1{
         visibility: visible;
+    }
+    .play2{
+        visibility: visible;
+        margin-top: 70vh
     }
 }
 
 @media(max-width:912px){
     .result{
-        width: 20vh;
+
+        transform: translateX(-50%) translateY(-50%) rotate(90deg);
+        margin-left: 10px;
+        /* position: relative; */
+        top: 50%;
+        text-align: center;
+        width: 50vw;
     }
+    .play1{
+        visibility: visible;
+    }
+    .play2{
+        visibility: visible;
+        margin-top: 70vh
+    }
+}
+@media(max-height:800px){
+    .result{
+        width: 40vh;
+    }
+    
 }

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>SNAKE GAME</h1>
+        
     <canvas id="game" width="400" height="400"></canvas>
     <div class="result">
         <h1>Game Over!!</h1>
@@ -18,13 +18,13 @@
         <button onclick="reload_button()" id="reset">Reset</button>
     </div>
 
-    <div class="play">
-    <button id="vacant" class = "button"><b></b></button>    
-    <button id="up" onclick = "up_button()" class = "button"><b>⬆</b></button>
-    <button id="vacant"  class = "button"><b></b></button>
-    <button id="left" onclick = "left_button()" class = "button"><b>⬅</b></button>
-    <button id="down" onclick = "down_button()" class = "button"><b>⬇</b></button>
-    <button id="right" onclick = "right_button()" class = "button"><b>➡</b></button>
+    <div class="play1">  
+        <button id="up" onclick = "up_button()" class = "button"><b>⬆</b></button>
+        <button id="down" onclick = "down_button()" class = "button"><b>⬇</b></button>
+    </div>
+    <div class="play2">
+        <button id="left" onclick = "left_button()" class = "button"><b>⬅</b></button>
+        <button id="right" onclick = "right_button()" class = "button"><b>➡</b></button>
     </div>
     <script src="javascript.js"></script>
 </body>
