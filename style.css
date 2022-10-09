@@ -164,3 +164,8 @@ button:hover {
     }
     
 }
+@media(max-height:700px){
+    canvas{
+        margin-top: 30px;
+    }
+}
